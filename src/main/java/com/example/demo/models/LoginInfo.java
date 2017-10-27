@@ -23,5 +23,4 @@ public class LoginInfo {
         return this.password;
     }
 
-
 }

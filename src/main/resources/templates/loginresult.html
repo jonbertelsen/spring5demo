@@ -7,9 +7,9 @@
 <body>
     <h1>Login result</h1>
 
-    <p th:text="'Login: ' + ${login.loginName}" />
-    <p th:text="'Password: ' + ${login.password}" />
-    <a href="/login">Submit another message</a>
+    <p>Login name: <span th:text="${login.loginName}"></span> </p>
+    <p> Password: <span th:text="${login.password}"></span> </p>
+    <p><a href="/login">Submit another message</a></p>
 
 </body>
 </html>

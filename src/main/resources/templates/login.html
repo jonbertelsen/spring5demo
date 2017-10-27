@@ -22,9 +22,9 @@
 
         <form action="#" th:action="@{/loginresult}" th:object="${login}" method="post">
             <div class="form-group">
-                <p><span th:text="${loginText}"/> <input type="text" th:field="*{loginName}" /></p>
-                <p><span th:text="${passwordText}"/> <input type="text" th:field="*{password}" /></p>
-                <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+                <p>Login name: <input type="text" th:field="*{loginName}" /></p>
+                <p>Password: <input type="text" th:field="*{password}" /></p>
+                <p><input type="submit" value="Submit" /></p>
             </div>
         </form>
 

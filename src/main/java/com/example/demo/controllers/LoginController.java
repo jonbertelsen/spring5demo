@@ -17,16 +17,12 @@ public class LoginController {
     @GetMapping("/login")
     public String loginForm(Model model) {
         model.addAttribute("login", new LoginInfo());
-        model.addAttribute("loginText", "Login:");
-        model.addAttribute("passwordText", "Password:");
         return "login";
     }
 
     @PostMapping("/loginresult")
     public String loginResultSubmit(@ModelAttribute("login") LoginInfo login, Model model) {
         model.addAttribute("login", login);
-        model.addAttribute("loginText", "Login:");
-        model.addAttribute("passwordText", "Password:");
         return "loginresult";
     }
 
