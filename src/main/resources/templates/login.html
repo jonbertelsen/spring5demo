@@ -21,7 +21,7 @@
     <h1>My First Spring Web App</h1>
 
 
-        <form action="#" th:action="@{/loginresult}" th:object="${login}" method="post">
+        <form th:action="@{/loginresult}" th:object="${login}" method="post">
             <div class="form-group">
                 <p>Login name: <input type="text" th:field="*{loginName}" /></p>
                 <p>Password: <input type="text" th:field="*{password}" /></p>
