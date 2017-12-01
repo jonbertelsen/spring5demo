@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show Userlist</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Show Logged In Users</h1>
+    <table>
+    <tr th:each="user : ${userList}">
+        <td th:text="${user.key}">username</td>
+        <td th:text="${user.value.password}">userpassword</td>
+    </tr>
+    </table>
+    <p><a href="/login">Submit another message</a></p>
+
+</body>
+</html>
+

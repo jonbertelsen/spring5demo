@@ -6,12 +6,16 @@
 </head>
 <body>
     <h1>Login result</h1>
+    <h2>Welcome <span th:text="${login.loginName}"></span></h2>
 
     <p>Login name: <span th:text="${login.loginName}"></span> </p>
     <p> Password: <span th:text="${login.password}"></span> </p>
     <p><a href="/login">Submit another message</a></p>
+    <p><a href="/showuserlist">Show list of logged in users</a></p>
 
-    <p><span th:text="${login.ShowLogin()}"></span></p>
+
+
+
 
 </body>
 </html>
