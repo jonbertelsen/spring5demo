@@ -1,9 +1,13 @@
-package com.example.demo.models;
+package com.example.demo.services;
+
+import org.springframework.stereotype.Service;
 
 /**
  * Created by jonb on 10/08/17.
  */
-public class LoginInfo {
+@Service
+public class LoginInfo implements LoginInterface {
+
     private String loginName;
     private String password;
 
@@ -23,4 +27,8 @@ public class LoginInfo {
         return this.password;
     }
 
+    @Override
+    public String ShowLogin() {
+        return getLoginName() + ", " + getPassword();
+    }
 }
